@@ -1,0 +1,58 @@
+@import "./base.css";
+
+body {
+  font-size: theme("fontSize.DEFAULT.text");
+  line-height: theme("fontSize.DEFAULT.text.1");
+  font-family: "Houschka Pro";
+  font-style: normal;
+  font-weight: 500;
+}
+h1 {
+  font-size: 12px/12px;
+  font-size: theme("fontSize.DEFAULT.h1");
+  line-height: theme("fontSize.DEFAULT.h1.1");
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: theme("fontSize.DEFAULT.h5");
+  line-height: theme("fontSize.DEFAULT.h5.1");
+  font-weight: 800;
+}
+.text-bold {
+  font-size: theme("fontSize.DEFAULT.[text-bold]");
+  line-height: theme("fontSize.DEFAULT.[text-bold].1");
+  font-family: "Houschka Pro";
+  font-style: normal;
+  font-weight: 700;
+}
+.caption {
+  font-size: theme("fontSize.DEFAULT.caption");
+  line-height: theme("fontSize.DEFAULT.caption.1");
+}
+
+@screen md {
+  body {
+    font-size: theme("fontSize.md.text");
+    line-height: theme("fontSize.md.text.1");
+  }
+  h1 {
+    font-size: theme("fontSize.md.h1");
+    line-height: theme("fontSize.md.h1.1");
+  }
+
+  h5 {
+    font-size: theme("fontSize.md.h5");
+    line-height: theme("fontSize.md.h5.1");
+  }
+  .text-bold {
+    font-size: theme("fontSize.md.[text-bold]");
+    line-height: theme("fontSize.md.[text-bold].1");
+  }
+  .caption {
+    font-size: theme("fontSize.md.caption");
+    line-height: theme("fontSize.md.caption.1");
+  }
+}

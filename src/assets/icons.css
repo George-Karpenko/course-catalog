@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'course-catalog';
+  src:  url('fonts/CourseCatalog/course-catalog.eot?ot5u4r');
+  src:  url('fonts/CourseCatalog/course-catalog.eot?ot5u4r#iefix') format('embedded-opentype'),
+    url('fonts/CourseCatalog/course-catalog.ttf?ot5u4r') format('truetype'),
+    url('fonts/CourseCatalog/course-catalog.woff?ot5u4r') format('woff'),
+    url('fonts/CourseCatalog/course-catalog.svg?ot5u4r#course-catalog') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'course-catalog' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\2b63";
+}
+.icon-arrow-more-detailed:before {
+  content: "\27f6";
+}
+.icon-arrow-next:before {
+  content: "\2b62";
+}
+.icon-arrow-up:before {
+  content: "\2b61";
+}
+.icon-nav-left:before {
+  content: "\276e";
+}
+.icon-nav-right:before {
+  content: "\276f";
+}
+.icon-search:before {
+  content: "\2315";
+}
