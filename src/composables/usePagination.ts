@@ -7,7 +7,7 @@ interface Props {
   elementsOnThePage: number
 }
 
-export default function useCatalog(props: Props) {
+export default function usePagination(props: Props) {
   const countPage = computed(() => Math.ceil(props.totalRows / props.elementsOnThePage));
   const pagesBeforeCurrentPage = computed(() => {
     if (props.modelValue - Math.floor(props.perPage / 2) <= 0) {
