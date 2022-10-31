@@ -146,7 +146,7 @@ onMounted(() => {
   top: calc(100% + 5px);
   right: 0;
   background-color: theme("colors.white");
-  box-shadow: 0px 4px 14px rgb(0 0 0 / 12%);
+  box-shadow: theme("boxShadow.sort-list-mobile");
   border-radius: theme("borderRadius.DEFAULT");
   display: flex;
   flex-direction: column;

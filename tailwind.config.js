@@ -30,7 +30,7 @@ module.exports = {
     },
     extend: {
       textUnderlineOffset: {
-        5: '5px',
+        5: "5px",
       },
       colors: {
         white: "#FFFFFF",
@@ -41,7 +41,7 @@ module.exports = {
         "middle-dark": "#9DB0BF",
         "middle-light": "#CDD5E2",
         light: "#E2E8F3",
-        "super-light": "#F0F4FC"
+        "super-light": "#F0F4FC",
         // ...
       },
       padding: {
@@ -67,7 +67,7 @@ module.exports = {
           text: ["15px", "24px"],
           "text-bold": ["15px", "24px"],
           caption: ["15px", "19px"],
-        }
+        },
       },
       margin: {
         "60px": "60px",
@@ -88,6 +88,7 @@ module.exports = {
         "input-active": "inset 0px 2px 2px rgba(0, 0, 0, 0.12)",
         "input-focus": "inset 0px 2px 2px rgba(0, 0, 0, 0.12)",
         "card-active": "inset 0px 5px 10px rgba(0, 0, 0, 0.4)",
+        "sort-list-mobile": "0px 4px 14px rgb(0 0 0 / 12%)",
       },
       height: {
         "400px": "400px",
