@@ -79,7 +79,7 @@ onMounted(() => {
   <div class="catalog-header caption">
     <p>{{ $t("numberOfResults", numberOfResults) }}</p>
     <div>
-      <span>Сортировать по:</span>
+      <span>{{ $t('sortBy') }}</span>
       <span
         v-for="sortName in SortBy"
         :class="sortClass[sortName]"
@@ -88,11 +88,11 @@ onMounted(() => {
         @mouseleave="sortNoPressed()"
         class="sort cursor-pointer hidden md:block"
       >
-        {{ $t(`sortBy.${sortName}`) }}
+        {{ $t(`sortByValue.${sortName}`) }}
       </span>
       <div class="sortMobile md:hidden" ref="sortMobile">
         <span class="cursor-pointer">
-          {{ $t(`sortBy.${sort.sortBy}`) }}
+          {{ $t(`sortByValue.${sort.sortBy}`) }}
         </span>
         <i :class="sortClass[sort.sortBy]"></i>
         <ul v-if="isOpenSortingList">
@@ -102,7 +102,7 @@ onMounted(() => {
               class="flex cursor-pointer"
             >
               <span>
-                {{ $t(`sortBy.${sortName}`) }}
+                {{ $t(`sortByValue.${sortName}`) }}
               </span>
               <i class="icon-arrow-down"></i>
             </li>
@@ -111,7 +111,7 @@ onMounted(() => {
               class="flex cursor-pointer"
             >
               <span>
-                {{ $t(`sortBy.${sortName}`) }}
+                {{ $t(`sortByValue.${sortName}`) }}
               </span>
               <i class="icon-arrow-up"></i>
             </li>

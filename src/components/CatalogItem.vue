@@ -22,7 +22,7 @@ defineProps<{
         {{ item.cost.toLocaleString("ru-RU") }} {{ item.cost_currency }}
       </h5>
       <div class="more-detailed">
-        <p>Подробнее</p>
+        <p>{{ $t('moreDetailed') }}</p>
         <i class="icon-arrow-more-detailed"></i>
       </div>
     </div>

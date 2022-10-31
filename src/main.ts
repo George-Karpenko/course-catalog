@@ -44,19 +44,4 @@ const i18n = createI18n({
 import "./assets/main.css";
 
 const app = createApp(App);
-app
-  .directive("click-outside", {
-    beforeMount(el, binding, vnode) {
-      el.clickOutsideEvent = function (event: Event) {
-        if (!(el === event.target || el.contains(event.target))) {
-          binding.value(event, el);
-        }
-      };
-      document.body.addEventListener("click", el.clickOutsideEvent);
-    },
-    unmounted(el) {
-      document.body.removeEventListener("click", el.clickOutsideEvent);
-    },
-  })
-  .use(i18n)
-  .mount("#app");
+app.use(i18n).mount("#app");

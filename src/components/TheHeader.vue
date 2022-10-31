@@ -21,9 +21,9 @@ function updateFilter() {
     <h1 class="my-30px">{{ title }}</h1>
     <FormInput
       v-model="filter"
+      :labelValue="$t('search')"
+      :placeholder="$t('catalogSearch')"
       type="search"
-      labelValue="Поиск"
-      placeholder="Поиск по каталогу"
       inputClass="pr-14"
     >
       <button class="icon-search" type="submit" @click="updateFilter"></button>

@@ -1,6 +1,10 @@
 {
   "numberOfResults": "{n} результатов | {n} результат | {n} результата | {n} результатов",
-  "sortBy": {
+  "sortBy": "Сортировка по",
+  "catalogSearch": "Поиск по каталогу",
+  "search": "Поиск",
+  "moreDetailed": "Подробнее",
+  "sortByValue": {
     "title": "Алфавиту",
     "cost": "Цене"
   }
