@@ -20,8 +20,6 @@ export default function useCatalog(props: Props) {
     return res;
   }
 
-  const width = ref();
-
   const newItems = computed(() => {
     const filter = props.filter.toUpperCase();
     let newItems: Сourse[] = props.items;
