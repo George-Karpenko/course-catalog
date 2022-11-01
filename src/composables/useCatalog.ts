@@ -21,11 +21,11 @@ export default function useCatalog(props: Props) {
   }
 
   const newItems = computed(() => {
-    const filter = props.filter.toUpperCase();
     let newItems: Сourse[] = props.items;
-    if (filter) {
+    if (props.filter) {
+      const filter = new RegExp(`(^|[ ])${props.filter.trim()}([ ]|$)`, 'i')
       newItems = props.items.filter(
-        (item) => item.title.toUpperCase().indexOf(filter) !== -1
+        (item) => item.title.search(filter) !== -1
       );
     }
     if (props.sort.sortBy === "cost") {

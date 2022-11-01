@@ -26,10 +26,10 @@ function updateInput(event: Event) {
       :id="id"
       :type="type"
       :value="modelValue"
-      @input="updateInput"
       :class="inputClass"
       class="transition ease-in-out"
       :="$attrs"
+      @input="updateInput"
     />
     <slot></slot>
     <label v-if="labelValue" :for="id" class="font-bold block">

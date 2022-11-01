@@ -25,6 +25,7 @@ function updateFilter() {
       :placeholder="$t('catalogSearch')"
       type="search"
       inputClass="pr-14"
+      @keyup.enter="updateFilter"
     >
       <button class="icon-search" type="submit" @click="updateFilter"></button>
     </FormInput>
