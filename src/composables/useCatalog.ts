@@ -23,7 +23,7 @@ export default function useCatalog(props: Props) {
   const newItems = computed(() => {
     let newItems: Сourse[] = props.items;
     if (props.filter) {
-      const filter = new RegExp(`(^|[ ])${props.filter.trim()}([ ]|$)`, 'i')
+      const filter = new RegExp(`(^|[ ])${props.filter.trim()}([^a-zA-ZА-Яа-я0-9]|$)`, 'i')
       newItems = props.items.filter(
         (item) => item.title.search(filter) !== -1
       );
